@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Recipe Flavour</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Magic Recipes Flavour</h1>
+        <p class="material-icons logo-icon">cookie</p>
+      </div>
+      <nav class="nav-bar">
+        <ul class="nav-item-container">
+          <li><a href="#" class="nav-item">Home</a></li>
+          <li><a href="#" class="nav-item">Recipes</a></li>
+          <li><a href="#" class="nav-item">Favourite</a></li>
+          <li><button class="nav-item-btn">Sign Up</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section-hero">
+      <div class="hero-container">
+        <div class="hero-content-container">
+          <h2>Savor the Flavors: Your Ultimate Recipe Companion</h2>
+          <p>
+            With our kitchen library, you can find endless recipes that make
+            cooking exciting and fun while providing you with nutritional
+            information specific to your personal tastes
+          </p>
+          <a href="#" class="link-btn">Explore Recipes</a>
+        </div>
+        <img
+          src="Images/family-cooking.jpg"
+          alt="Cooking with family"
+          class="hero-img"
+        />
+      </div>
+    </section>
+
+    <section class="section-categories">
+      <div class="container">
+        <h3 class="section-title">categories</h3>
+        <ul class="card-list" id="categories-list"></ul>
+        <button class="material-icons arrow-btn" id="prev-btn">
+          arrow_left
+        </button>
+        <button class="material-icons arrow-btn" id="next-btn">
+          arrow_right
+        </button>
+      </div>
+    </section>
+
+    <section class="section-recipe">
+      <div class="container">
+        <h3 class="section-title">Recipe</h3>
+        <div class="search-container">
+          <label class="search-title">What's on Your Mind</label>
+          <input class="search-bar" type="text" placeholder="Search ..." />
+        </div>
+        <ul class="card-list" id="recipes-list"></ul>
+      </div>
+    </section>
+
+    <section class="section-feature-list">
+      <div class="feature-list-container">
+        <h3 class="section-title">Features</h3>
+        <ul class="feature-card-list">
+          <li class="feature-card">
+            <div class="feature-title-container">
+              <span class="material-icons feature-icon">search</span>
+              <p class="feature-title">Explore Endless Recipes</p>
+            </div>
+            <p class="feature-description">
+              Find recipes for every meal, dietary preference, and occasion.
+              Search by ingredients, categories, or dietary needs.
+            </p>
+          </li>
+
+          <li class="feature-card">
+            <div class="feature-title-container">
+              <span class="material-icons feature-icon">favorite_border</span>
+              <p class="feature-title">Save Your Favorites</p>
+            </div>
+            <p class="feature-description">
+              Keep track of your favorite recipes and create custom collections
+              for easy access.
+            </p>
+          </li>
+
+          <li class="feature-card">
+            <div class="feature-title-container">
+              <span class="material-icons feature-icon"> checklist </span>
+              <p class="feature-title">Simplify Shopping</p>
+            </div>
+            <p class="feature-description">
+              Generate shopping lists based on your selected recipes. Manage and
+              mark items as you shop.
+            </p>
+          </li>
+
+          <li class="feature-card">
+            <div class="feature-title-container">
+              <span class="material-icons feature-icon">timer</span>
+              <p class="feature-title">Cook with Confidence</p>
+            </div>
+            <p class="feature-description">
+              Follow easy, step-by-step instructions with built-in timers to
+              guide you through each recipe.
+            </p>
+          </li>
+
+          <li class="feature-card">
+            <div class="feature-title-container">
+              <span class="material-icons feature-icon"> monitor_heart</span>
+              <p class="feature-title">Eat Smart</p>
+            </div>
+            <p class="feature-description">
+              Access detailed nutritional information for each recipe, including
+              calories and macros, to make healthier choices.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="logo">
+        <h3 class="logo-title">Magic Recipes Flavour</h3>
+        <p class="material-icons logo-icon">cookie</p>
+      </div>
+      <p class="footer-sub-title">
+        Explore & Cook - Dive Into currated collection of recipes
+      </p>
+      <p class="copy">&copy; Magic Recipes Flaovour . All right Reserved</p>
+      <ul class="footer-link-container">
+        <li><a href="#" class="footer-links">Home</a></li>
+        <li><a href="#" class="footer-links">Recipes</a></li>
+        <li><a href="#" class="footer-links">Favourite</a></li>
+        <li><button class="footer-btn">Sign Up</button></li>
+      </ul>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
