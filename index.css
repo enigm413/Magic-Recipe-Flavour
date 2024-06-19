@@ -14,7 +14,8 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 1.1;
   font-weight: 400;
-  color: #f1f1e8;
+  background-color: #f1f1e8;
+  color: #206a5d;
 }
 
 a:link,
@@ -79,15 +80,16 @@ li {
 
 .card {
   z-index: 10;
+  box-shadow: #81b214 0px 0px 5px;
   position: relative;
+  align-self: stretch;
 }
 
 .card-link {
   display: flex;
+  height: 100%;
   flex-direction: column;
-  align-items: center;
   gap: 1.2rem;
-  box-shadow: #81b214 0px 0px 5px;
   padding-bottom: 1.2rem;
   cursor: pointer;
 }
@@ -109,12 +111,19 @@ li {
   font-weight: 600;
   font-weight: 500;
   text-transform: capitalize;
+  padding: 0 2.4rem;
+  align-self: center;
 }
 
 .text-container {
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  align-self: flex-start;
+  justify-self: flex-end;
+  gap: 1.2rem;
 }
 
 .display-none {
@@ -131,6 +140,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #206a5d;
+  color: #f1f1e8;
   padding: 3rem;
 }
 
@@ -184,6 +194,7 @@ header {
 .section-hero {
   background-color: #206a5d;
   padding: 3rem 13rem;
+  color: #f1f1e8;
 }
 
 .hero-container {
@@ -250,8 +261,7 @@ p {
 ------------------------------------------------*/
 
 .section-categories {
-  background-color: #f1f1e8;
-  padding: 13rem 8rem;
+  padding: 13rem 3rem;
   position: relative;
 }
 
@@ -289,25 +299,35 @@ p {
 ------------------------------------------------*/
 
 .section-recipe {
+  padding: 13rem 3rem;
   background-color: #206a5d;
-  padding: 9.6rem 5.2rem;
-}
-
-.section-recipe .card {
-  background-color: #f1f1e8;
 }
 
 .section-recipe .section-title {
   color: #f1f1e8;
 }
 
+.section-recipe .card {
+  box-shadow: #f1f1e8 1px 1px 2.6px;
+}
+
+#recipes-list {
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3rem;
+  row-gap: 8rem;
+}
+
+#recipes-list .card-title {
+  color: #f1f1e8;
+  font-weight: 700;
+  align-self: flex-start;
+}
+
 .search-container {
-  display: grid;
-  grid-template-columns: 0.6fr 1.5fr;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  column-gap: 6.4rem;
-  padding: 3.9rem 3rem 13rem 3rem;
+  justify-content: space-between;
+  padding: 3rem 3rem 8rem 3rem;
 }
 
 .search-title {
@@ -316,6 +336,7 @@ p {
   text-transform: uppercase;
   justify-self: end;
   font-style: italic;
+  font-weight: 600;
 }
 
 .search-bar {
@@ -323,27 +344,107 @@ p {
   border-radius: 25px;
   border: none;
   outline: none;
-  background-color: #f1f1e8;
+  background-color: #206a5d;
+  color: #f1f1e8;
   background-image: url(Images/search.png);
   background-repeat: no-repeat;
   background-position: 15px 8px;
   background-size: 3rem;
   object-fit: contain;
   font-size: 2rem;
+  box-shadow: #f1f1e8 0px 1px 4px;
+  flex-basis: 60%;
+}
+
+.search-btn {
+  padding: 1.2rem 3rem;
+  background-color: #81b214;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: #f1f1e8;
+  border-radius: 5px;
+  border: none;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  color: #f1f1e8;
+  background-color: #81b214;
+  padding: 1.2rem;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-weight: 700;
+  border-bottom-left-radius: 15px;
+  border: none;
+}
+
+.time-icon {
+  color: #f1f1e8;
+  font-weight: 700;
 }
 
 .fav-btn {
   color: #81b214;
   background-color: #f1f1e8;
-  font-weight: 700;
+  border: none;
   padding: 0.8rem;
   font-size: 3rem;
-  border: none;
   position: absolute;
   top: 0rem;
-  right: 0rem;
+  left: 0rem;
   z-index: 10;
   cursor: pointer;
+  border-radius: 5%;
+  border-bottom-right-radius: 50%;
+  font-weight: 100;
+  border-top: 2px solid #f1f1e8;
+}
+
+.tags {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 0 0.8rem;
+}
+
+.tags * {
+  font-size: 1.2rem;
+  padding: 0.8rem 4.4rem;
+  background-color: #81b214;
+  border-radius: 8px;
+  text-transform: uppercase;
+  color: #f1f1e8;
+  font-weight: 600;
+  text-align: center;
+}
+
+.user-likes {
+  color: #bfdcae;
+  font-weight: 300;
+  padding: 1.2rem 2rem;
+}
+
+.page-list {
+  display: flex;
+  gap: 2.4rem;
+  padding: 8rem 3rem 0rem 3rem;
+  margin: 0 auto;
+  align-self: center;
+  justify-content: center;
+}
+
+.page-list * {
+  padding: 1.2rem 5.2rem;
+  background-color: #f1f1e8;
+  color: #206a5d;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  border: none;
 }
 
 /*
@@ -352,8 +453,7 @@ p {
 ------------------------------------------------*/
 
 .section-feature-list {
-  background-color: #f1f1e8;
-  padding: 3rem;
+  padding: 8rem 3rem;
 }
 
 .feature-list-container {
