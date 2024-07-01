@@ -1,134 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Inter", sans-serif;
-  line-height: 1.1;
-  font-weight: 400;
-  background-color: #f1f1e8;
-  color: #206a5d;
-}
-
-a:link,
-a:visited {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-.container {
-  max-width: 120rem;
-  margin: 0 auto;
-}
-
-.section-title {
-  font-size: 5.2rem;
-  text-transform: capitalize;
-  font-style: italic;
-  text-align: center;
-  margin-bottom: 4.8rem;
-  color: #5a7d0e;
-  font-weight: 600;
-}
-
-.logo {
-  display: flex;
-  gap: 1.2rem;
-  align-items: center;
-  justify-content: center;
-  background-color: #206a5d;
-  border: none;
-  padding: 2rem 0.8rem 0.8rem 2rem;
-}
-
-.logo-title {
-  color: #f1f1e8;
-  font-weight: 700;
-  font-size: 2.4rem;
-  text-transform: uppercase;
-}
-
-.logo-icon {
-  color: #81b214;
-  font-size: 3rem;
-}
-
-.image-container {
-  width: 100%;
-  padding-top: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.card-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 3rem;
-  justify-content: center;
-}
-
-.card {
-  z-index: 10;
-  box-shadow: #81b214 0px 0px 5px;
-  position: relative;
-  align-self: stretch;
-}
-
-.card-link {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  gap: 1.2rem;
-  padding-bottom: 1.2rem;
-  cursor: pointer;
-}
-
-.card-image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-.card-title {
-  color: #206a5d;
-  letter-spacing: 1px;
-  font-size: 1.8rem;
-  font-weight: 600;
-  font-weight: 500;
-  text-transform: capitalize;
-  padding: 0 2.4rem;
-  align-self: center;
-}
-
-.text-container {
-  width: 100%;
-  height: 100%;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  justify-self: flex-end;
-  gap: 1.2rem;
-}
-
-.display-none {
-  display: none;
-}
+/*This design is set for Ultra Wide Laptop */
 
 /*
 -----------------------------------------------
@@ -137,23 +7,30 @@ li {
 
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   background-color: #206a5d;
   color: #f1f1e8;
-  padding: 3rem;
+  padding: 3.2rem;
+}
+
+header .logo-title {
+  font-size: 1.6rem;
+  color: #f1f1e8;
+  font-weight: 700;
+  letter-spacing: 1.1px;
 }
 
 .nav-bar {
   display: flex;
-  gap: 3rem;
+  gap: 3.2rem;
+  justify-self: flex-end;
 }
 
 .nav-item-container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 3.2rem;
   align-self: center;
   justify-self: center;
 }
@@ -162,7 +39,7 @@ header {
 .nav-item:visited,
 .nav-item-btn {
   display: inline-block;
-  padding: 0.8rem 3rem;
+  padding: 0.8rem 3.2rem;
   font-size: 1.6rem;
   color: #f1f1e8;
   font-weight: 600;
@@ -186,6 +63,15 @@ header {
   box-shadow: none;
   transition: all 2s;
 }
+
+.menu-btn {
+  color: #81b214;
+  background-color: #206a5d;
+  border: none;
+  display: none;
+  font-size: 3rem;
+}
+
 /*
 -----------------------------------------------
 ------------------Hero--------------------------
@@ -193,13 +79,11 @@ header {
 
 .section-hero {
   background-color: #206a5d;
-  padding: 3rem 13rem;
+  padding: 3.2rem 9.6rem;
   color: #f1f1e8;
 }
 
 .hero-container {
-  max-width: 120rem;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 8rem;
@@ -209,88 +93,89 @@ header {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
-  padding: 0 3rem;
+  padding: 0 3.2rem;
+  align-self: start;
 }
 
 h2 {
-  font-size: 3.9rem;
+  font-size: 3.6rem;
   font-weight: 600;
-  letter-spacing: -1px;
+  letter-spacing: 0.5px;
   line-height: 1.3;
   margin-top: 2rem;
 }
 
-p {
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 1.7;
-}
-
 .hero-img {
-  max-width: 100%;
-  border-radius: 15px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  border-radius: 5px;
+  align-self: center;
 }
 
 .link-btn:link,
 .link-btn:visited {
   align-self: flex-start;
-  border-radius: 2rem;
-  padding: 0.8rem 5.2rem;
-  font-size: 1.6rem;
-  color: #206a5d;
-  background-color: #bfdcae;
+  border-radius: 8px;
+  padding: 1.2rem 4.8rem;
+  font-size: 1.4rem;
+  color: #f1f1e8;
+  background-color: #81b214;
+  border: 2px solid #81b214;
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: none;
   transition: all 0.5s;
-  border: 2px solid #206a5d;
+  letter-spacing: 1.3px;
 }
 
 .link-btn:hover,
 .link-btn:active {
-  border: 2px solid #81b214;
   box-shadow: #81b214 0px 0px 8px;
   background-color: #206a5d;
   color: #f1f1e8;
   transition: all 0.5s;
 }
 
-/*
------------------------------------------------
+/* ----------------------------------------------- 
 ------------------Categories--------------------------
-------------------------------------------------*/
-
+ ------------------------------------------------*/
 .section-categories {
-  padding: 13rem 3rem;
-  position: relative;
+  padding: 12.8rem;
+}
+
+.categories-card {
+  transition: transform ease-in;
+}
+
+.arrow-btn {
+  font-size: 6.2rem;
+  border: 2px solid #81b214;
+  background-color: #f1f1e8;
+  color: #81b214;
+  transition: all 0.5s;
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.arrow-btn:hover {
+  background-color: #81b214;
+  color: #f1f1e8;
+}
+
+#prev-btn {
+  left: -3.5rem;
+}
+
+#next-btn {
+  right: -3.5rem;
 }
 
 #categories-list li:first-child,
 #categories-list li:last-child {
   display: none;
-}
-
-.arrow-btn {
-  font-size: 23rem;
-  padding: 0;
-  color: #81b214;
-  position: absolute;
-  top: 38%;
-  border: none;
-  transition: all 0.5s;
-}
-
-.arrow-btn:hover {
-  cursor: pointer;
-  color: #5a7d0e;
-}
-
-#prev-btn {
-  left: 5px;
-}
-
-#next-btn {
-  right: 5px;
 }
 
 /*
@@ -299,7 +184,7 @@ p {
 ------------------------------------------------*/
 
 .section-recipe {
-  padding: 13rem 3rem;
+  padding: 12.8rem;
   background-color: #206a5d;
 }
 
@@ -312,58 +197,55 @@ p {
 }
 
 #recipes-list {
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 3rem;
-  row-gap: 8rem;
+  grid-template-columns: repeat(auto-fit, 28rem);
+  column-gap: 2.4rem;
+  row-gap: 3.6rem;
 }
 
 #recipes-list .card-title {
   color: #f1f1e8;
   font-weight: 700;
   align-self: flex-start;
+  font-size: 1.6rem;
 }
 
 .search-container {
   display: flex;
+  gap: 2.4rem;
   align-items: center;
-  justify-content: space-between;
-  padding: 3rem 3rem 8rem 3rem;
-}
-
-.search-title {
-  color: #bfdcae;
-  font-size: 2.4rem;
-  text-transform: uppercase;
-  justify-self: end;
-  font-style: italic;
-  font-weight: 600;
+  justify-content: center;
+  padding: 2.4rem 3.2rem 6.4rem 3.2rem;
 }
 
 .search-bar {
-  padding: 1.2rem 8rem;
+  padding: 1.2rem 6.4rem;
   border-radius: 25px;
   border: none;
   outline: none;
-  background-color: #206a5d;
-  color: #f1f1e8;
-  background-image: url(Images/search.png);
+  background-color: #f1f1e8;
+  color: #206a5d;
+  background-image: url(/Images/search.png);
   background-repeat: no-repeat;
   background-position: 15px 8px;
   background-size: 3rem;
   object-fit: contain;
   font-size: 2rem;
-  box-shadow: #f1f1e8 0px 1px 4px;
-  flex-basis: 60%;
+  flex-basis: 100%;
+}
+
+::placeholder {
+  opacity: 0.5;
+  color: #206a5d;
 }
 
 .search-btn {
-  padding: 1.2rem 3rem;
   background-color: #81b214;
-  font-size: 1.6rem;
+  padding: 1.2rem;
+  font-size: rem;
   font-weight: 700;
   letter-spacing: 0.8px;
   color: #f1f1e8;
-  border-radius: 5px;
+  border-radius: 5%;
   border: none;
 }
 
@@ -373,18 +255,20 @@ p {
   gap: 1.2rem;
   color: #f1f1e8;
   background-color: #81b214;
-  padding: 1.2rem;
+  padding: 0.8rem;
   position: absolute;
   top: 0px;
   right: 0px;
   font-weight: 700;
   border-bottom-left-radius: 15px;
   border: none;
+  font-size: 1.6rem;
 }
 
 .time-icon {
   color: #f1f1e8;
   font-weight: 700;
+  font-size: 2.4rem;
 }
 
 .fav-btn {
@@ -392,7 +276,7 @@ p {
   background-color: #f1f1e8;
   border: none;
   padding: 0.8rem;
-  font-size: 3rem;
+  font-size: 3.2rem;
   position: absolute;
   top: 0rem;
   left: 0rem;
@@ -408,7 +292,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  padding: 0 0.8rem;
+  padding: 1.2rem 0.8rem 0rem 0.8rem;
 }
 
 .tags * {
@@ -426,15 +310,16 @@ p {
   color: #bfdcae;
   font-weight: 300;
   padding: 1.2rem 2rem;
+  font-size: 1.6rem;
 }
 
 .page-list {
   display: flex;
   gap: 2.4rem;
   padding: 8rem 3rem 0rem 3rem;
-  margin: 0 auto;
   align-self: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .page-list * {
@@ -447,35 +332,32 @@ p {
   border: none;
 }
 
+.page-list li:first-child {
+  background-color: #81b214;
+  color: #f1f1e8;
+}
+
 /*
 -----------------------------------------------
-------------------Feature-list--------------------------
+------------------Feature-list------------------
 ------------------------------------------------*/
 
 .section-feature-list {
-  padding: 8rem 3rem;
-}
-
-.feature-list-container {
-  max-width: 120rem;
-  margin: 0 auto;
-  font-weight: 700;
-  color: #206a5d;
-  font-size: 3rem;
+  padding: 12.8rem;
 }
 
 .feature-card-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 8rem;
-  column-gap: 4.4rem;
+  grid-template-columns: repeat(auto-fit, 38rem);
+  justify-content: center;
+  gap: 3.2rem;
 }
 
 .feature-card {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
-  padding: 3rem 2rem;
+  gap: 1.6rem;
+  padding: 3.2rem 2.4rem;
   justify-items: flex-start;
   box-shadow: #81b214 0px 1px 2px 0px;
   border-top: 4px solid #81b214;
@@ -483,19 +365,20 @@ p {
 
 .feature-title-container {
   display: flex;
-  gap: 2rem;
+  gap: 0.8rem;
   align-items: center;
   justify-content: center;
 }
 
 .feature-description {
   font-size: 1.6rem;
+  color: #206a5d;
 }
 
 .feature-icon {
   color: #81b214;
   fill: unset;
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: 900;
 }
 
@@ -515,6 +398,7 @@ footer {
   color: #f1f1e8;
   gap: 1.2rem;
   align-items: center;
+  padding: 2.4rem 0 1.2rem 0;
 }
 
 .footer-link-container {
@@ -533,7 +417,6 @@ footer {
   border-bottom: 2px solid #206a5d;
   display: inline-block;
   align-self: flex-end;
-  padding-bottom: 1rem;
 }
 
 .footer-links:visited::after,
@@ -558,11 +441,12 @@ footer {
 }
 
 .footer-sub-title {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 300;
 }
 
 .copy {
   font-size: 1.4rem;
   color: #bfdcae;
+  text-transform: uppercase;
 }

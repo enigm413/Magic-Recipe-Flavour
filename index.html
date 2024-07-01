@@ -7,35 +7,38 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="Styling/general.css" />
+    <link rel="stylesheet" href="Styling/style.css" />
+    <link rel="stylesheet" href="Styling/queries.css" />
     <title>Recipe Flavour</title>
   </head>
   <body>
     <header>
       <div class="logo">
-        <h1>Magic Recipes Flavour</h1>
-        <p class="material-icons logo-icon">cookie</p>
+        <h1 class="logo-title">Magic Recipes Flavour</h1>
+        <span class="material-icons logo-icon">cookie</span>
       </div>
       <nav class="nav-bar">
         <ul class="nav-item-container">
-          <li><a href="#" class="nav-item">Home</a></li>
-          <li><a href="#" class="nav-item">Recipes</a></li>
+          <li><a href="#header" class="nav-item">Home</a></li>
+          <li><a href="#section-recipe" class="nav-item">Recipes</a></li>
           <li><a href="#" class="nav-item">Favourite</a></li>
-          <li><button class="nav-item-btn">Sign Up</button></li>
+          <li><button class="nav-item-btn">Login</button></li>
         </ul>
+        <button class="material-icons menu-btn">menu</button>
       </nav>
     </header>
 
-    <section class="section-hero">
+    <section class="section-hero" id="section-hero">
       <div class="hero-container">
         <div class="hero-content-container">
           <h2>Savor the Flavors: Your Ultimate Recipe Companion</h2>
-          <p>
+          <p class="intro">
             With our kitchen library, you can find endless recipes that make
             cooking exciting and fun while providing you with nutritional
             information specific to your personal tastes
           </p>
-          <a href="#" class="link-btn">Explore Recipes</a>
+          <a href="#section-recipe" class="link-btn">Explore Recipes</a>
         </div>
         <img
           src="Images/family-cooking.jpg"
@@ -62,19 +65,16 @@
       <div class="container">
         <h3 class="section-title">Explore Our Recipes</h3>
         <div class="search-container">
-          <label class="search-title">What's on Your Mind</label>
-          <input class="search-bar" type="text" placeholder="Search ..." />
-          <button class="search-btn">Search</button>
+          <input
+            class="search-bar"
+            type="text"
+            placeholder="... Search"
+            value=""
+          />
+          <button class="material-icons search-btn">search</button>
         </div>
         <ul class="card-list" id="recipes-list"></ul>
-        <ul class="page-list">
-          <li>Prev</li>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>Next</li>
-        </ul>
+        <ul class="page-list" id="page-list"></ul>
       </div>
     </section>
 
@@ -89,7 +89,7 @@
             </div>
             <p class="feature-description">
               Find recipes for every meal, dietary preference, and occasion.
-              Search by ingredients, categories, or dietary needs.
+              Search by its name or categories.
             </p>
           </li>
 
@@ -150,13 +150,12 @@
       </p>
       <p class="copy">&copy; Magic Recipes Flaovour . All right Reserved</p>
       <ul class="footer-link-container">
-        <li><a href="#" class="footer-links">Home</a></li>
+        <li><a href="#section-hero" class="footer-links">Home</a></li>
         <li><a href="#section-recipe" class="footer-links">Recipes</a></li>
-        <li><a href="#" class="footer-links">Favourite</a></li>
-        <li><button class="footer-btn">Sign Up</button></li>
+        <li><a href="#section-favourite" class="footer-links">Favourite</a></li>
+        <li><button class="footer-btn">Login</button></li>
       </ul>
     </footer>
-
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>

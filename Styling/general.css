@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.1;
+  font-weight: 400;
+  background-color: #f1f1e8;
+  color: #206a5d;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #bfdcae;
+  letter-spacing: 1.2px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section-title {
+  font-size: 5.2rem;
+  text-transform: capitalize;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 4.8rem;
+  color: #5a7d0e;
+  font-weight: 600;
+}
+
+.logo {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #206a5d;
+  border: none;
+  flex-wrap: nowrap;
+}
+
+.logo-title {
+  color: #f1f1e8;
+  font-weight: 700;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.logo-icon {
+  color: #81b214;
+  font-size: 3.2rem;
+}
+
+.image-container {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.2rem;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: #81b214 0px 0px 5px;
+  position: relative;
+}
+
+.card-link {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-bottom: 1.2rem;
+  cursor: pointer;
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.card-title {
+  color: #206a5d;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 0 2.4rem;
+  align-self: center;
+}
+
+.text-container {
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-self: flex-end;
+  gap: 1.2rem;
+}
+
+.display-none {
+  display: none;
+}
